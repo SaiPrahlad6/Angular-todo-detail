@@ -1,0 +1,17 @@
+<div class="container my-3"></div>
+<h4>Add a todo</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <br>
+        <input type="text" [(ngModel)]="title" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+    </div>
+    <p></p>
+    <div class="form-group">
+        <label for="Desc">Description</label>
+        <textarea class="form-control" [(ngModel)]="desc" name="desc" id="description" rows="3"></textarea>
+    </div>
+    <p></p>
+    <button type="submit" class="btn btn-sm btn-primary">Add todo</button>
+    <p></p>
+</form>
